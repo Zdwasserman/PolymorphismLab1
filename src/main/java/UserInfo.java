@@ -21,7 +21,7 @@ public class UserInfo {
 
     public void printPets() {
             System.out.println(pets);
-        
+
     }
 }
 
