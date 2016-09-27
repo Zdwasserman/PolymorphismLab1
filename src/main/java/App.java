@@ -6,8 +6,15 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-       UserInterface userinterface = new UserInterface();
+        UserInterface userinterface = new UserInterface();
+        PetList list = new PetList();
+        Pet pet;
         userinterface.userInterface();
+
+        list.printPets();
+
+
+        System.out.println("END");
 
     }
 
