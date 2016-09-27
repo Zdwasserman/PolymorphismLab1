@@ -1,5 +1,6 @@
+import org.junit.Assert;
 import org.junit.Test;
-
+import static org.junit.Assert.*;
 /**
  * Created by kurtmccann on 9/26/16.
  */
@@ -9,7 +10,8 @@ public class CatTest
     public void speakTest()
     {
         Pet jerkface = new Cat("cat");
-        String actual = jerkface.speak();  //MAKE SURE TO SET OUTPUT TO STRING
-        String expected = "I just vommed on the rug.";
+        String actual = jerkface.speak();
+        String expected = "Meow";
+        assertEquals(actual, expected);
     }
 }
